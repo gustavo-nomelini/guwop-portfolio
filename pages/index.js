@@ -32,15 +32,16 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an indie app developer based in Japan!
+        <p>Olá Me chamo Gustavo Lopes Nomelini 👋 </p>
+        <p>Sou um desenvolvedor brasileiro 🇧🇷 </p>
       </Box>
 
       <Box display={{ md: 'flex' }}>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
-            Takuya Matsuyama
+            Gustavo Lopes Nomelini
           </Heading>
-          <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+          <p>Desenvolvedor WEB ( Programador | Frontend | Backend )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -59,7 +60,7 @@ const Home = () => (
             overflow="hidden"
           >
             <Image
-              src="/images/takuya.jpg"
+              src="/images/gustavo.png"
               alt="Profile image"
               width="100"
               height="100"
@@ -70,50 +71,61 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          Sobre o autor
         </Heading>
         <Paragraph>
-          Takuya is a freelance and a full-stack developer based in Osaka with a
-          passion for building digital services/stuff he wants. He has a knack
-          for all things launching products, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves
-          hanging out with his camera. Currently, he is living off of his own
-          product called{' '}
-          <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}>
-            Inkdrop
-          </Link>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <Link
-            as={NextLink}
-            href="https://www.youtube.com/devaslife"
-            passHref
-            target="_blank"
-          >
-            Dev as Life
-          </Link>
-          &quot; has more than 100k subscribers.
+          Gustavo Lopes Saggin Nomelini é um desenvolvedor web full-stack que
+          mora em Cascavel-PR no Brasil. Entusiasta da tecnologia e das ciências
+          exatas, Gustavo é apaixonado por construir aplicações e soluções
+          digitais para problemas reais. Quando não está produzindo conteúdo
+          digital tem como hobby cozinhar, ir na academia e jogar video game. Um
+          homem que valoriza a família e ter um tempo de qualidade com as
+          pessoas que ama.
         </Paragraph>
+
+        {/* <Paragraph> */}
+        {/*   Takuya is a freelance and a full-stack developer based in Osaka with a */}
+        {/*   passion for building digital services/stuff he wants. He has a knack */}
+        {/*   for all things launching products, from planning and designing all the */}
+        {/*   way to solving real-life problems with code. When not online, he loves */}
+        {/*   hanging out with his camera. Currently, he is living off of his own */}
+        {/*   product called{' '} */}
+        {/*   <Link as={NextLink} href="/works/inkdrop" passHref scroll={false}> */}
+        {/*     Inkdrop */}
+        {/*   </Link> */}
+        {/*   . He publishes content for marketing his products and his YouTube */}
+        {/*   channel called &quot; */}
+        {/*   <Link */}
+        {/*     as={NextLink} */}
+        {/*     href="https://www.youtube.com/devaslife" */}
+        {/*     passHref */}
+        {/*     target="_blank" */}
+        {/*   > */}
+        {/*     Dev as Life */}
+        {/*   </Link> */}
+        {/*   &quot; has more than 100k subscribers. */}
+        {/* </Paragraph> */}
+
         <Box align="center" my={4}>
           <Button
             as={NextLink}
-            href="/works"
+            href="/projetos"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Meu Portfólio
           </Button>
         </Box>
       </Section>
 
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
-          Bio
+          Biografika
         </Heading>
         <BioSection>
           <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          Nascido em Uberaba - Minas Gerais , Brasil.
         </BioSection>
         <BioSection>
           <BioYear>2010</BioYear>

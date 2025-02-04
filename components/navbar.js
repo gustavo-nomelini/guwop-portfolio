@@ -77,8 +77,8 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          <LinkItem href="/projetos" path={path}>
+            Projetos
           </LinkItem>
           <LinkItem href="https://store.craftz.dog/" path={path}>
             Wallpapers
@@ -89,7 +89,7 @@ const Navbar = props => {
           <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/gustavo-nomelini"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -97,7 +97,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            GitHub
           </LinkItem>
         </Stack>
 
@@ -114,10 +114,10 @@ const Navbar = props => {
               />
               <MenuList>
                 <MenuItem as={MenuLink} href="/">
-                  About
+                  Sobre o Autor
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
-                  Works
+                <MenuItem as={MenuLink} href="/projetos">
+                  Projetos
                 </MenuItem>
                 <MenuItem as={MenuLink} href="https://store.craftz.dog/">
                   Wallpapers
@@ -128,11 +128,8 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
                   Uses
                 </MenuItem>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
+                <MenuItem as={Link} href="https://github.com/gustavo-nomelini">
+                  GitHub
                 </MenuItem>
               </MenuList>
             </Menu>
